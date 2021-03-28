@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
+	<script src="./layui/layui.js"></script>
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script>
+	layui.use(['element','form','carousel'], function(){
+	});
+</script>
+<style>
+	.nav a {
+		font-size: 17px;
+		font-family: "Georgia";
+	}
+
+</style>
+<div class="container">
+
+	<!--	导航-->
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="text-align: center;margin-top: 15px; margin-bottom: 15px">
+			<span class="layui-breadcrumb nav" style="" lay-separator="    ">
+			  <a href="#Home">Home</a>
+			  <a href="#About">About</a>
+			  <a href="#Publications">Publications</a>
+			  <a href="#Education">Education</a>
+				<a href="#Experience">Experience</a>
+			  <a href="#Activities">Activities</a>
+			  <a href="#Awards">Awards</a>
+			  <a href="简历链接">Download CV</a>
+			</span>
+		</div>
+	</div>
+
+	<!--	Home-->
+	<div class="row clearfix" style='background-image: url("img/4.jpeg");height: 500px' id="Home">
+		<div class="col-md-8 column">
+			<div class="row clearfix" style="margin-top: 160px; margin-left: 30px">
+				<div class="col-md-6 column">
+					<img style="width:200px; margin-left: 30px;margin-bottom: 20px" alt="140x140" src="img/2.jpg" class="img-circle" />
+				</div>
+				<div class="col-md-6 column">
+					<p class="lead text-success text-center">
+					<h1 style="font-family: 'Times New Roman';color: white">Shiying Xiong</h1>
+					<h3 style="font-family: 'Times New Roman';color: white">he is a handsome boy</h3>
+					<h6 style="font-family: 'Times New Roman';color: white">email: Shiying Xiong@icloud.com</h6>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 column">
+		</div>
+	</div>
+
+	<!--	Abstract-->
+	<div class="row clearfix" style="margin-top: 60px" id="About">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman'">
+				About Me.
+			</h2>
+			<p style="font-family: 'Times New Roman'">
+				Donec id elit non mi porta gravida at eget metus.
+				<a href="https://blog.csdn.net/weixin_41704972/article/details/111272398">你要插入的链接</a>
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+				massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+				<a href="https://blog.csdn.net/weixin_41704972/article/details/107499033">你要插入的链接</a>
+				Donec sed odio dui.
+			</p>
+		</div>
+	</div>
+
+	<!--	分界线-->
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+	<!--	Publications-->
+	<div class="row clearfix" id="Publications">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman'">
+				Publications.
+			</h2>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<img style="width: 100%" alt="140x140" src="img/3.jpg" />
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h3 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.</h3>
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+						condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+						sem malesuada magna mollis euismod. Donec sed odio dui.<br/>
+						Donec id elit non mi porta gravida at eget metus.
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris
+						condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+						sem malesuada magna mollis euismod. Donec sed odio dui.
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<img style="width: 100%" alt="140x140" src="img/3.jpg" />
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h3 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.</h3>
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+					sem malesuada magna mollis euismod. Donec sed odio dui.<br/>
+					Donec id elit non mi porta gravida at eget metus.
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris
+					condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+					sem malesuada magna mollis euismod. Donec sed odio dui.
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--	分界线-->
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 40px;"/>
+		</div>
+	</div>
+
+	<!--	Education-->
+	<div class="row clearfix" id="Education">
+		<div class="col-md-12 column" >
+			<h2 style="font-family: 'Times New Roman'">
+				Education.
+			</h2>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">2014-2019</h6>
+					<h3 style="font-family: 'Times New Roman'">Peking University </h3>
+					<h4 style="font-family: 'Times New Roman'">Computer Science</h4>
+					<h6 style="font-family: 'Verdana';color: lightgray">BeiJing, China</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">2014-2019</h6>
+					<h3 style="font-family: 'Times New Roman'">Peking University </h3>
+					<h4 style="font-family: 'Times New Roman'">Computer Science</h4>
+					<h6 style="font-family: 'Verdana';color: lightgray">BeiJing, China</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					malesuada magna mollis euismod. Donec sed odio dui.<br/>
+					Donec id elit non mi porta gravida at eget metus.
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris
+					condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+					sem malesuada magna mollis euismod. Donec sed odio dui.
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--	分界线-->
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+	<!--	Research Experience-->
+	<div class="row clearfix" id="Experience">
+		<div class="col-md-12 column" >
+			<h2 style="font-family: 'Times New Roman'">
+				Research Experience.
+			</h2>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">2014-2019</h6>
+					<h3 style="font-family: 'Times New Roman'">Peking University </h3>
+					<h4 style="font-family: 'Times New Roman'">Computer Science</h4>
+					<h6 style="font-family: 'Verdana';color: lightgray">BeiJing, China</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">2014-2019</h6>
+					<h3 style="font-family: 'Times New Roman'">Peking University </h3>
+					<h4 style="font-family: 'Times New Roman'">Computer Science</h4>
+					<h6 style="font-family: 'Verdana';color: lightgray">BeiJing, China</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					malesuada magna mollis euismod. Donec sed odio dui.<br/>
+					Donec id elit non mi porta gravida at eget metus.
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris
+					condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+					sem malesuada magna mollis euismod. Donec sed odio dui.
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--	分界线-->
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+	<!--	Activities-->
+	<div class="row clearfix" id="Activities">
+		<div class="col-md-12 column" >
+			<h2 style="font-family: 'Times New Roman'">
+				Activities.<br/>
+			</h2>
+			<h3 style="font-family: 'Times New Roman'">Invited Talks:</h3>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">July 2020</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 40px">
+		<div class="col-md-12 column">
+			<div class="row clearfix" >
+				<div class="col-md-4 column" >
+					<p>
+					<h6 style="font-family: 'Verdana';color: lightgray">July 2020</h6>
+					</p>
+				</div>
+				<div class="col-md-8 column">
+
+					<p>
+					<h4 style="font-family: 'Times New Roman'">Donec id elit non mi porta gravida at eget metus.justo fermen</h4>
+					malesuada magna mollis euismod. Donec sed odio dui.<br/>
+					Donec id elit non mi porta gravida at eget metus.
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris
+					condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
+					sem malesuada magna mollis euismod. Donec sed odio dui.
+					<h4 style="font-family: 'Times New Roman'"><a href="111111111" >ermentum massa justo fermentum massa justo</a></h4>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 20px">
+		<div class="col-md-12 column" >
+			<h3 style="font-family: 'Times New Roman'">Peer-review activities:</h3>
+			<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+		</div>
+	</div>
+
+	<!--	分界线-->
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+	<!--	Awards-->
+	<div class="row clearfix" id="Awards">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman'">
+				Awards.
+			</h2>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 10px">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<p style="margin-left: 20px">
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+				</div>
+
+				<div class="col-md-4 column">
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+				</div>
+
+				<div class="col-md-4 column">
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+
+					<p>
+					<h3 style="font-family: 'Times New Roman';color: darkorchid">Lise Meitner Fellowship Award</h3>
+					<h5 style="font-family: Verdana">condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta</h5>
+					</p><br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center" >
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;text-align: center"/>@copy 版权归shiying Xiong所有<br>
+		</div>
+	</div>
+
+<script>
+
+</script>
+
+
+</div>
