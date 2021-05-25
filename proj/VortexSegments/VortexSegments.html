@@ -9,7 +9,7 @@
 		li a{display: block; color: #333; text-align: center; padding: 16px 16px; text-decoration: none}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shiying Xiong</title>
+	<title>Vortex Segments</title>
 	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
 	<script src="./layui/layui.js"></script>
 	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -27,52 +27,27 @@
 <body>
 <div class="container">
     <ul class="nav nav-pills" style="text-align: center">
-    	<li><a href="#Home">Home</a></li> 
-		<li><a href="#About">About</a></li>  
-		<li><a href="#Publications">Publications</a></li>  
-		<li><a href="#Education">Education</a></li>  
-		<li><a href="#Employment">Employment</a></li>  
-		<li><a href="#Presentations">Presentations</a></li>  
-		<li><a href="#Teaching">Teaching</a></li> 
+    	<li><a href="#Title">Title</a></li> 
+		<li><a href="#Abstract">Abstract</a></li>  
+		<li><a href="#Video">Video</a></li>  
+		<li><a href="#Acknowledgement">Acknowledgement</a></li>  
+		<li><a href="#Citation">Citation</a></li>  
     </ul>
     
 
 
-	<!--	Home-->
-	<div class="row clearfix" style="margin-top: 40px">
+	<!--	Title-->
+	<div class="row clearfix" style="margin-top: 60px" id="Title">
 		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-10 column">
-					<p class="lead text-success text-center">
-					<h2 style="font-family: 'Times New Roman' font-weight: 800">Shiying Xiong</h2>
-					<h3 style="font-family: 'Times New Roman'">Postdoc in Computer Science, Dartmouth College</h3>
-					<h3 style="font-family: 'Times New Roman'">Office: Sudikoff 157, Hanover, NH 03755, USA</h3>
-					<h3 style="font-family: 'Times New Roman'">Email: shiying.xiong@dartmouth.edu</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://scholar.google.com/citations?hl=en&user=eq5bc5oAAAAJ"><img style="width: 8%" alt="140x140" src="img/GoogleScholar.png" /></a>
-                    <a href="https://www.researchgate.net/profile/Shiying-Xiong-2"><img style="width: 8%" alt="140x140" src="img/ResearchGate.png" /></a>
-					</h3>
-					</p>
-				</div>
-				<div class="col-md-2 column">
-					<img style="width: 100%" alt="102x142" src="img/xiong.jpg" />
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-
-	<div class="row clearfix" style="margin-top: 60px" id="About">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				About
+			<h2 style="font-family: 'Times New Roman' font-weight: 800 ; text-align: center">
+				Incompressible flow simulation on vortex segment clouds
 			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				I am a Postdoctoral Researcher working with Prof. 
-                <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a> in the VCL Lab at Dartmouth College.
-                I received my Ph.D. degree at Peking University in 2019, advised by Prof. <a href="http://www2.coe.pku.edu.cn/subpaget.asp?id=489">Yue Yang</a>. Before starting my Ph.D., I obtained a Bachelor's degree in Physics at Jilin University in 2014. My research interests include Hamiltonian Fluid Mechanics, Vortex Dynamics, Computational Physics, and Scientific Machine Learning.
+			<h3 style="font-family: 'Times New Roman'; text-align: center">
+				<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Rui Tao, Yaorui Zhang, Fan Feng, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
+			</h3>
+			<h3 style="font-family: 'Times New Roman'; text-align: center">
+				ACM Trans. Graph., Vol. 40, No. 4, Article 98. Publication date: August 2021.
+				<a href="https://cs.dartmouth.edu/~bozhu/papers/vortex_segment.pdf" >[PDF]</a>
 			</h3>
 		</div>
 	</div>
@@ -83,310 +58,16 @@
 		</div>
 	</div>
 
-	<!--	Publications-->
-	<div class="row clearfix" id="Publications">
+	<div class="row clearfix" style="margin-top: 60px" id="Abstract">
 		<div class="col-md-12 column">
 			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Publications (Corresponding author *, Co-first author #)
+				Abstract
 			</h2>
+			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
+				We propose a novel Lagrangian geometric representation using segment clouds to simulate incompressible fluid exhibiting strong anisotropic vortical features. The central component of our approach is a cloud of discrete segments enhanced by a set of local segment reseeding operations to facilitate both the geometrical evolution and the topological updates of vortical flow. We build a vortex dynamics solver with the support for dynamic solid boundaries based on discret segment primitives. We demonstrate the efficacy of our approach by simulating a broad range of challenging flow phenomena, such as reconnection of non-closed vortex tubes and vortex shedding behind a rotating object.
+			</h3>
 		</div>
 	</div>
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/gauge.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shuqi Yang, Shiying Xiong*, Yaorui Zhang, Fan Feng, Jinyuan Liu, Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Clebsch gauge fluid
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">ACM Transactions on Graphics (SIGGRAPH), 2021
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">
-						<a href="https://www.cs.dartmouth.edu/~bozhu/papers/clebsch_gauge_fluid.pdf" >[PDF]</a>
-                        <a href="https://y-sq.github.io/proj/clebsch_gauge_fluid/" >[WEB]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/Vortex.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong, Rui Tao, Yaorui Zhang, Fan Feng, and Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Incompressible flow simulation on vortex segment clouds
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">ACM Transactions on Graphics (SIGGRAPH), 2021 (Featured on video trailer)
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">
-						<a href="https://cs.dartmouth.edu/~bozhu/papers/vortex_segment.pdf" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/sphbubble.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Mengdi Wang, Yitong Deng, Xiangxin Kong, Aditya H. Prasad, Shiying Xiong, and Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Thin-film smoothed particle hydrodynamics fluid
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">ACM Transactions on Graphics (SIGGRAPH), 2021 (Featured on video trailer)
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">
-						<a href="https://cs.dartmouth.edu/~bozhu/papers/sph_bubble.pdf" >[PDF]</a>
-						<a href="https://wang-mengdi.github.io/proj/thin-film-sph/" >[WEB]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/TaylorNet.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Yunjin Tong#, Shiying Xiong#*, Xingzhe He, Guanghan Pan, and Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Symplectic neural networks in Taylor series form for Hamiltonian systems
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Journal of Computational Physics, 2021
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://arxiv.org/abs/2005.04986" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/NSSNN.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong*, Yunjin Tong, Xingzhe He, Shuqi Yang, Cheng Yang, and Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Nonseparable symplectic neural networks
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">International Conference on Learning Representations, 2021 
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://arxiv.org/pdf/2010.12636v2.pdf" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/SSINN.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Daniel M. DiPietro, Shiying Xiong, Bo Zhu</h3>
-					<h3 style="font-family: 'Times New Roman'">Sparse symplectically integrated neural networks
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">34th Conference on Neural Information Processing Systems, 2020 
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://papers.nips.cc/paper/2020/file/439fca360bc99c315c5882c4432ae7a4-Paper.pdf" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/twistTube.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong and Yue Yang*</h3>
-					<h3 style="font-family: 'Times New Roman'">Effects of twist on the evolution of knotted magnetic flux tubes
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Journal of Fluid Mechanics, 895, A28, 2020
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/341580854_Effects_of_twist_on_the_evolution_of_knotted_magnetic_flux_tubes" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/HITVSF.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong and Yue Yang*</h3>
-					<h3 style="font-family: 'Times New Roman'">Identifying the tangle of twisted vortex tubes in homogeneous isotropic turbulence
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Journal of Fluid Mechanics, 874, 952-978, 2019 (Featured on cover)
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/334467996_Identifying_the_tangle_of_vortex_tubes_in_homogeneous_isotropic_turbulence" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/writheTube.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong and Yue Yang*</h3>
-					<h3 style="font-family: 'Times New Roman'">Construction of knotted vortex tubes with the writhe-dependent helicity
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Physics of Fluids, 31, 047101, 2019 (Editor’s pick)
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/332132337_Construction_of_knotted_vortex_tubes_with_the_writhe-dependent_helicity" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/virtualVSF.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Jinhua Hao, Shiying Xiong, and Yue Yang*</h3>
-					<h3 style="font-family: 'Times New Roman'">Tracking vortex surfaces frozen in the virtual velocity in non-ideal flows
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Journal of Fluid Mechanics, 863, 513-544, 2019
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/330640967_Tracking_vortex_surfaces_frozen_in_the_virtual_velocity_in_non-ideal_flows" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-    
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/FlameTG.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Hao Zhou, Jiaping You, Shiying Xiong, Yue Yang*, Dominique Thévenin, and Shiyi Chen</h3>
-					<h3 style="font-family: 'Times New Roman'">Interactions between the premixed flame front and the three-dimensional Taylor-Green vortex
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Proceedings of the Combustion Institute, 37, 2461-2468, 2019
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/327316821_Interactions_between_the_premixed_flame_front_and_the_three-dimensional_Taylor-Green_vortex" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-    
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/BLVSF.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Yaomin Zhao, Shiying Xiong, Yue Yang*, and Shiyi Chen</h3>
-					<h3 style="font-family: 'Times New Roman'">Sinuous distortion of vortex surfaces in the lateral growth of turbulent spots
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Physical Review Fluids, 3, 074701, 2018
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/326336028_Sinuous_distortion_of_vortex_surfaces_in_the_lateral_growth_of_turbulent_spots" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 40px">
-		<div class="col-md-12 column">
-			<div class="row clearfix">
-				<div class="col-md-3 column" style="margin-top: 20px">
-					<img style="width: 100%" alt="140x140" src="img/BCM.png" />
-				</div>
-				<div class="col-md-9 column">
-
-					<p>
-					<h3 style="font-family: 'Times New Roman'">Shiying Xiong and Yue Yang*</h3>
-					<h3 style="font-family: 'Times New Roman'">The boundary-constraint method for constructing vortex-surface fields
-					</h3>
-					<h3 style="font-family: 'Times New Roman'">Journal of Computational Physics, 339, 31-45, 2017
-					</h3>
-					<h3 style="font-family: 'Times New Roman'"><a href="https://www.researchgate.net/publication/314657398_The_boundary-constraint_method_for_constructing_vortex-surface_fields" >[PDF]</a>
-					</h3>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
 
 
 	<div class="row clearfix" >
@@ -395,108 +76,47 @@
 		</div>
 	</div>
 
-	<!--	Education-->
-	<div class="row clearfix" id="Education">
-		<div class="col-md-12 column" >
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Education
-			</h2>
-			<div class="col-md-9 column" >
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Peking University</h3>
-					<h3 style="font-family: 'Times New Roman'">Ph.D. in Fluid Mechanics, Advisor: Prof. <a href="http://www2.coe.pku.edu.cn/subpaget.asp?id=489">Yue Yang</a></h3>
-				</p>
-			</div>
-			<div class="col-md-3 column">
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Beijing, China</h3>
-					<h3 style="font-family: 'Times New Roman'">09/2014 - 07/2019</h3>
-				</p>
-			</div>
-		    <div class="col-md-9 column" >
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Jilin University</h3>
-					<h3 style="font-family: 'Times New Roman'">B.S. in Physics</h3>
-				</p>
-			</div>
-			<div class="col-md-3 column">
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Changchun, China</h3>
-					<h3 style="font-family: 'Times New Roman'">09/2010 - 07/2014</h3>
-				</p>
-		    </div>
-		</div>  
-	</div>
 
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
+    
+    <div class="row clearfix" style="margin-top: 60px;text-align: center" id="Video">
+		<div class="youtube">
+       		<iframe width="560" height="315" class="elementor-video-iframe" src="https://www.youtube.com/embed/swAISiNZfoc" 
+　　　　　　frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+       	</iframe>
+        </div> 
 	</div>
-
-	<!--	Employment-->
-	<div class="row clearfix" id="Employment">
-		<div class="col-md-12 column" >
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Employment
-			</h2>
-			<div class="col-md-9 column" >
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Dartmouth College</h3>
-					<h3 style="font-family: 'Times New Roman'">Postdoctoral Researcher in Computer Science</h3>
-				</p>
-			</div>
-			<div class="col-md-3 column">
-				<p>
-					<h3 style="font-family: 'Times New Roman'">Hanover, NH, USA</h3>
-					<h3 style="font-family: 'Times New Roman'">10/2019 - present</h3>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-	<!--	Conference-->
-	<div class="row clearfix" id="Presentations">
-		<div class="col-md-12 column" >
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Presentations
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Nonseparable symplectic neural networks, 9th International Conference on Learning Representations (Virtual Only), May 2021</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Identifying the tangle of twisted vortex tubes in homogeneous isotropic turbulence, 71th Annual Meeting of the APS Division of Fluid Dynamics, Nov. 2018, Atlanta, USA</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Spiral vortex structures in homogeneous isotropic turbulence, 10th National Congress on Fluid Mechanics of China, Oct. 2018, Hangzhou, China</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Identifying the spiral vortex tubes and tracking vortex surfaces frozen in the virtual velocity, Chiral and Structure Seminar at Su-Cheng Center, Oct. 2018, Nanjing, China</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Construction of vortex-surface fields in isotropic turbulence, Chinese Congress of Theoretical and Applied Mechanics, Aug. 2017, Beijing, China</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Characterization of representative vortex surfaces in K-type transitional boundary layer, 10th International Symposium on Turbulence and Shear Flow Phenomena, Jul. 2017, Chicago, USA</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">The boundary-constraint method for constructing vortex-surface fields, 69th Annual Meeting of the APS Division of Fluid Dynamics, Nov. 2016, Portland, USA</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">Construction of Vortex-surface fields based on boundary constraint, 9th National Congress on Fluid Mechanics of China, Oct. 2016, Nanjing, China</h3>
-		</div>
-	</div>
-
 	
 	<div class="row clearfix" >
 		<div class="col-md-12 column" style="text-align: center">
 			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
 		</div>
 	</div>
-    
-    <!--	Teaching-->
-    <div class="row clearfix" id="Teaching">
+
+    <div class="row clearfix" style="margin-top: 60px" id="Acknowledgement">
 		<div class="col-md-12 column">
 			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Teaching
+				Acknowledgement
 			</h2>
-			<h3 style="font-family: 'Times New Roman'">Spring 2018, 2016, Teaching Assistant, Engineering Mathematics, Yuanpei College, Peking University</h3>
-			<h3 style="font-family: 'Times New Roman'">Spring 2017, Teaching Assistant, Calculus II, College of Engineering, Peking University</h3>
+			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
+				We thank Danielle Poole and all the anonymous reviewers for their constructive comments. We acknowledge the funding support from National Science Foundation (1919647). Rui Tao acknowledges the support from the China Scholarship Council visiting research student award. We credit the Houdini educational licenses for the video rendering.
+			</h3>
 		</div>
 	</div>
-	
-    <div class="row clearfix" >
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+    <div class="row clearfix" style="margin-top: 60px" id="Citation">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman' font-weight: 800">
+				Citation
+				<a href="VortexSegments.bib" >[BIB]</a>
+			</h2>
+		</div>
+	</div>
+	<div class="row clearfix" >
 		<div class="col-md-12 column" style="text-align: center">
 			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
 		</div>
