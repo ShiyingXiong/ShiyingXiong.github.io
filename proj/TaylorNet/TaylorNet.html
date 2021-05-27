@@ -29,7 +29,6 @@
     <ul class="nav nav-pills" style="text-align: center">
     	<li><a href="#Title">Title</a></li> 
 		<li><a href="#Abstract">Abstract</a></li>  
-		<li><a href="#Video">Video</a></li>  
 		<li><a href="#Acknowledgement">Acknowledgement</a></li>  
 		<li><a href="#Citation">Citation</a></li>  
     </ul>
@@ -40,14 +39,15 @@
 	<div class="row clearfix" style="margin-top: 60px" id="Title">
 		<div class="col-md-12 column">
 			<h2 style="font-family: 'Times New Roman' font-weight: 800 ; text-align: center">
-				Nonseparable symplectic neural networks
+				Symplectic neural networks in Taylor series form for Hamiltonian systems
 			</h2>
 			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Yunjin Tong, Xingzhe He, Shuqi Yang, Cheng Yang, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
+				Yunjin Tong, <a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Xingzhe He, Guanghan Pan, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
 			</h3>
 			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				International Conference on Learning Representations, 2021.
-				<a href="https://www.researchgate.net/publication/350484854_Nonseparable_symplectic_neural_networks" >[PDF]</a>
+				Journal of Computational Physics 437 110325, 2021. 
+				<a href="https://www.researchgate.net/publication/350584064_Symplectic_neural_networks_in_Taylor_series_form_for_Hamiltonian_systems#fullTextFileContent" >[PDF]</a>
+				<a href="https://github.com/ytong6/Taylor-net" >[CODE]</a>
 			</h3>
 		</div>
 	</div>
@@ -64,7 +64,7 @@
 				Abstract
 			</h2>
 			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				Predicting the behaviors of Hamiltonian systems has been drawing increasing attention in scientific machine learning. However, the vast majority of the literature was focused on predicting separable Hamiltonian systems with their kinematic and potential energy terms being explicitly decoupled while building data-driven paradigms to predict nonseparable Hamiltonian systems that are ubiquitous in fluid dynamics and quantum mechanics were rarely explored. The main computational challenge lies in the effective embedding of symplectic priors to describe the inherently coupled evolution of position and momentum, which typically exhibits intricate dynamics. To solve the problem, we propose a novel neural network architecture, Nonseparable Symplectic Neural Networks (NSSNNs), to uncover and embed the symplectic structure of a nonseparable Hamiltonian system from limited observation data. The enabling mechanics of our approach is an augmented symplectic time integrator to decouple the position and momentum energy terms and facilitate their evolution. We demonstrated the efficacy and versatility of our method by predicting a wide range of Hamiltonian systems, both separable and nonseparable, including chaotic vortical flows. We showed the unique computational merits of our approach to yield long-term, accurate, and robust predictions for large-scale Hamiltonian systems by rigorously enforcing symplectomorphism.
+				We propose an effective and light-weight learning algorithm, Symplectic Taylor Neural Networks (Taylor-nets), to conduct continuous, long-term predictions of a complex Hamil-tonian dynamic system based on sparse, short-term observations. At the heart of our algorithm is a novel neural network architecture consisting of two sub-networks. Both are embedded with terms in the form of Taylor series expansion designed with symmetric structure. The key mechanism underpinning our infrastructure is the strong expressiveness and special symmetric property of the Taylor series expansion, which naturally accommo-date the numerical fitting process of the gradients of the Hamiltonian with respect to the generalized coordinates as well as preserve its symplectic structure. We further incorporate a fourth-order symplectic integrator in conjunction with neural ODEs’ framework into our Taylor-net architecture to learn the continuous-time evolution of the target systems while simultaneously preserving their symplectic structures. We demonstrated the efficacy of our Taylor-net in predicting a broad spectrum of Hamiltonian dynamic systems, including the pendulum, the Lotka–Volterra, the Kepler, and the Hénon–Heiles systems. Our model ex-hibits unique computational merits by outperforming previous methods to a great extent regarding the prediction accuracy, the convergence rate, and the robustness despite using extremely small training data with a short training period (6000 times shorter than the predicting period), small sample sizes, and no intermediate data to train the networks.
 			</h3>
 		</div>
 	</div>
@@ -78,19 +78,6 @@
 
 
 
-    <div class="row clearfix" style="margin-top: 60px;text-align: center" id="Video">
-		<div class="youtube">
-       		<iframe width="560" height="315" class="elementor-video-iframe" src="https://www.youtube.com/embed/NPxk2xb77pk" 
-　　　　　　frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-       	</iframe>
-        </div> 
-	</div>
-	
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
 
     <div class="row clearfix" style="margin-top: 60px" id="Acknowledgement">
 		<div class="col-md-12 column">
@@ -98,7 +85,7 @@
 				Acknowledgement
 			</h2>
 			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				This project is supported in part by Neukom Institute CompX Faculty Grant, Burke Research Initiation Award, and ByteDance Gift Donation. Yunjin Tong is supported by the Dartmouth Women in Science Project (WISP), Undergraduate Advising and Research Program (UGAR), and Neukom Scholars Program.
+				This project is supported in part by Neukom Institute CompX Faculty Grant, Burke Research Initiation Award, and NSF MRI 1919647. Yunjin Tong is supported by the Dartmouth Women in Science Project (WISP), Undergraduate Advising and Research Program (UGAR), and Neukom Scholars Program.
 			</h3>
 		</div>
 	</div>
@@ -112,7 +99,7 @@
 		<div class="col-md-12 column">
 			<h2 style="font-family: 'Times New Roman' font-weight: 800">
 				Citation
-				<a href="NSSNN.bib" >[BIB]</a>
+				<a href="TaylorNet.bib" >[BIB]</a>
 			</h2>
 		</div>
 	</div>
