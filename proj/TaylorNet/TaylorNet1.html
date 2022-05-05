@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		ul{width:100%;list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #FAEBD7	; font-family: 'Times New Roman'; font-size: 25px}
+		ul li{float:center}
+		li a:hover {background-color: #0000FF}
+		li a{display: block; color: #333; text-align: center; padding: 16px 16px; text-decoration: none}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vortex Segments</title>
+	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
+	<script src="./layui/layui.js"></script>
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="google-site-verification" content="B7csoX1105RbCQIxLmRCFccraPu9TXIkNcRAddS2m5M" />
+
+
+</head>
+
+<body>
+<div class="container">
+    <ul class="nav nav-pills" style="text-align: center">
+    	<li><a href="#Title">Title</a></li> 
+		<li><a href="#Abstract">Abstract</a></li>  
+		<li><a href="#Acknowledgement">Acknowledgement</a></li>  
+		<li><a href="#Citation">Citation</a></li>  
+    </ul>
+    
+
+
+	<!--	Title-->
+	<div class="row clearfix" style="margin-top: 60px" id="Title">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman' font-weight: 800 ; text-align: center">
+				Symplectic neural networks in Taylor series form for Hamiltonian systems
+			</h2>
+			<h3 style="font-family: 'Times New Roman'; text-align: center">
+				Yunjin Tong, <a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Xingzhe He, Guanghan Pan, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
+			</h3>
+			<h3 style="font-family: 'Times New Roman'; text-align: center">
+				Journal of Computational Physics 437 110325, 2021. 
+				<a href="https://reader.elsevier.com/reader/sd/pii/S0021999121002205?token=F68495FC47CF271ABD579C61D644C8422A394D0E48437C4080A36694A9013748B1316A31F0CECBC64A51049E037CCFCA&originRegion=us-east-1&originCreation=20220504033940" >[PDF]</a>
+				<a href="https://github.com/ytong6/Taylor-net" >[CODE]</a>
+			</h3>
+		</div>
+	</div>
+
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+	<div class="row clearfix" style="margin-top: 60px" id="Abstract">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman' font-weight: 800">
+				Abstract
+			</h2>
+			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
+				We propose an effective and light-weight learning algorithm, Symplectic Taylor Neural Networks (Taylor-nets), to conduct continuous, long-term predictions of a complex Hamil-tonian dynamic system based on sparse, short-term observations. At the heart of our algorithm is a novel neural network architecture consisting of two sub-networks. Both are embedded with terms in the form of Taylor series expansion designed with symmetric structure. The key mechanism underpinning our infrastructure is the strong expressiveness and special symmetric property of the Taylor series expansion, which naturally accommo-date the numerical fitting process of the gradients of the Hamiltonian with respect to the generalized coordinates as well as preserve its symplectic structure. We further incorporate a fourth-order symplectic integrator in conjunction with neural ODEs’ framework into our Taylor-net architecture to learn the continuous-time evolution of the target systems while simultaneously preserving their symplectic structures. We demonstrated the efficacy of our Taylor-net in predicting a broad spectrum of Hamiltonian dynamic systems, including the pendulum, the Lotka–Volterra, the Kepler, and the Hénon–Heiles systems. Our model ex-hibits unique computational merits by outperforming previous methods to a great extent regarding the prediction accuracy, the convergence rate, and the robustness despite using extremely small training data with a short training period (6000 times shorter than the predicting period), small sample sizes, and no intermediate data to train the networks.
+			</h3>
+		</div>
+	</div>
+
+
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 40px;"/>
+		</div>
+	</div>
+
+
+
+
+    <div class="row clearfix" style="margin-top: 60px" id="Acknowledgement">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman' font-weight: 800">
+				Acknowledgement
+			</h2>
+			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
+				This project is supported in part by Neukom Institute CompX Faculty Grant, Burke Research Initiation Award, and NSF MRI 1919647. Yunjin Tong is supported by the Dartmouth Women in Science Project (WISP), Undergraduate Advising and Research Program (UGAR), and Neukom Scholars Program.
+			</h3>
+		</div>
+	</div>
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+
+    <div class="row clearfix" style="margin-top: 60px" id="Citation">
+		<div class="col-md-12 column">
+			<h2 style="font-family: 'Times New Roman' font-weight: 800">
+				Citation
+				<a href="TaylorNet.bib" >[BIB]</a>
+			</h2>
+		</div>
+	</div>
+	<div class="row clearfix" >
+		<div class="col-md-12 column" style="text-align: center">
+			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
+		</div>
+	</div>
+	
+
+<center>
+<font color='gray'>
+	<h3 style="font-family: 'Times New Roman'">
+        Copyright &copy Shiying Xiong
+    </h3>
+</font>
+</center>
+</div>
+
+</body>
