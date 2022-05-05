@@ -1,133 +1,169 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<style>
-		ul{width:100%;list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #FAEBD7	; font-family: 'Times New Roman'; font-size: 25px}
-		ul li{float:center}
-		li a:hover {background-color: #0000FF}
-		li a{display: block; color: #333; text-align: center; padding: 16px 16px; text-decoration: none}
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vortex Segments</title>
-	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
-	<script src="./layui/layui.js"></script>
-	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <title>Shiying Xiong</title>
 
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<meta name="google-site-verification" content="B7csoX1105RbCQIxLmRCFccraPu9TXIkNcRAddS2m5M" />
+    <meta name="description" content="Shiying Xiong - Clebsch.">
+    <meta name="keywords" content="Clebsch">
+    <meta name="author" content="Clebsch">
+
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="../../assets/css/combined.css">
+
+    <!-- END: Styles -->
+
 
 
 </head>
 
 <body>
-<div class="container">
-    <ul class="nav nav-pills" style="text-align: center">
-    	<li><a href="#Title">Title</a></li> 
-		<li><a href="#Abstract">Abstract</a></li>  
-		<li><a href="#Video">Video</a></li>  
-		<li><a href="#Acknowledgement">Acknowledgement</a></li>  
-		<li><a href="#Citation">Citation</a></li>  
-    </ul>
+
+
+
+
+
+        <!--START: Navbar-->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky">
+            <div class="container">
+                <div class="nk-nav-table">
+                    <ul class="nk-nav nk-navbar-align-center hidden-md-down">
+                        <li>
+                            <a href="Clebsch.html#Title">Title</a>
+                        </li>
+                        <li class="active">
+                            <a href="Clebsch.html#Abstract">Abstract</a>
+                        </li>
+                        <li>
+                            <a href="Clebsch.html#Video">Video</a>
+                        </li>
+                        <li>
+                            <a href="Clebsch.html#Acknowledgement">Acknowledgement</a>
+                        </li>
+                        <li>
+                            <a href="Clebsch.html#Citation">Citation</a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+
+
+
+    <div class="nk-main">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="bg-white" id="Title">
+                    <div class="col-md-12 column"><h6></h6></div>	
+					<div class="col-md-12 column" style="margin-top: 100px; text-align: center" >
+                        <h4>A Clebsch method for free-surface vortical flow simulation</h4>
+                        <h6>
+                        	<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Zhecheng Wang, Mengdi Wang, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
+						</h6>
+						<h6>ACM Trans. Graph., Vol. 41, No. 4, Article 116. Publication date: July 2022.<a href="Clebsch.pdf" >[PDF]</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+
+        
+
+        <div class="container">
+             <div class="col-lg-8 offset-lg-2">  
+                <div class="bg-white" id="Abstract">
+                    <div class="col-md-12 column" style="margin-top: 100px">
+                        <h6>We propose a novel Clebsch method to simulate the free-surface vortical flow. At the center of our approach lies a level-set method enhanced by a wave-function correction scheme and a wave-function extrapolation algorithm to tackle the Clebsch method's numerical instabilities near a dynamic interface. By combining the Clebsch wave function's expressiveness in representing vortical structures and the level-set function's ability on tracking interfacial dynamics, we can model complex vortex-interface interaction problems that exhibit rich free-surface flow details on a Cartesian grid. We showcase the efficacy of our approach by simulating a wide range of new free-surface flow phenomena that were impractical for previous methods, including horseshoe vortex, sink vortex, bubble rings, and free-surface wake vortices.</h6>
+                    </div>                          
+                </div>           
+            </div>        
+        </div>
+
+        <div class="nk-gap-4"></div>
+
+        <div class="container">
+             <div class="col-lg-8 offset-lg-2">  
+                <div class="bg-white" id="Video">
+                    <div class="col-md-12 column" style="margin-top: 100px">
+                        <div class="youtube">
+       						<iframe width="650" height="366" src="https://www.youtube.com/embed/uPDpqDbsDtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        				</div> 
+                    </div>                          
+                </div>           
+            </div>        
+        </div>
+
+        <div class="nk-gap-4"></div>
+
+        <div class="container">
+             <div class="col-lg-8 offset-lg-2">  
+                <div class="bg-white" id="Acknowledgement">
+                    <div class="col-md-12 column" style="margin-top: 100px">
+                        <h6>We thank all the anonymous reviewers for their constructive feedback. We acknowledge NSF-1919647, 2106733, and 2144806 for funding support. We credit the Houdini Education license for producing the video animations.</h6>
+                    </div>                          
+                </div>           
+            </div>        
+        </div>
+
+        <div class="nk-gap-4"></div>
+
+        <div class="container">
+             <div class="col-lg-8 offset-lg-2">  
+                <div class="bg-white" id="Citation">
+                    <div class="col-md-12 column" style="margin-top: 100px">
+                        <h6>
+							Citation
+							<a href="Clebsch.bib" >[BIB]</a>
+						</h6>
+                    </div>                          
+                </div>           
+            </div>        
+        </div>
+
+		<div class="nk-gap-4"></div>
+	</div>
+
+        <footer class="nk-footer">
+
+
+            <div class="nk-footer-cont">
+                <div class="container text-xs-center">
+
+                    <div class="nk-footer-text">
+                        <p>Copyright &copy Shiying Xiong</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+    <!-- START: Scripts -->
+
+    <script src="../../assets/js/combined.js"></script>
     
+    <!-- END: Scripts -->
 
-
-	<!--	Title-->
-	<div class="row clearfix" style="margin-top: 60px" id="Title">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800 ; text-align: center">
-				A Clebsch method for free-surface vortical flow simulation
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Zhecheng Wang, Mengdi Wang, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
-			</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				ACM Trans. Graph., Vol. 41, No. 4, Article 116. Publication date: July 2022.
-				<a href="Clebsch.pdf" >[PDF]</a>
-			</h3>
-		</div>
-	</div>
-
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 60px" id="Abstract">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Abstract
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				We propose a novel Clebsch method to simulate the free-surface vortical flow. At the center of our approach lies a level-set method enhanced by a wave-function correction scheme and a wave-function extrapolation algorithm to tackle the Clebsch method's numerical instabilities near a dynamic interface. By combining the Clebsch wave function's expressiveness in representing vortical structures and the level-set function's ability on tracking interfacial dynamics, we can model complex vortex-interface interaction problems that exhibit rich free-surface flow details on a Cartesian grid. We showcase the efficacy of our approach by simulating a wide range of new free-surface flow phenomena that were impractical for previous methods, including horseshoe vortex, sink vortex, bubble rings, and free-surface wake vortices.
-			</h3>
-		</div>
-	</div>
-
-
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 40px;"/>
-		</div>
-	</div>
-
-
-    
-    <div class="row clearfix" style="margin-top: 60px;text-align: center" id="Video">
-		<div class="youtube">
-       		<iframe width="912" height="513" src="https://www.youtube.com/embed/uPDpqDbsDtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> 
-	</div>
-	
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 60px" id="Acknowledgement">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Acknowledgement
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				We thank all the anonymous reviewers for their constructive feedback. We acknowledge NSF-1919647, 2106733, and 2144806 for funding support. We credit the Houdini Education license for producing the video animations.
-			</h3>
-		</div>
-	</div>
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 60px" id="Citation">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Citation
-				<a href="Clebsch.bib" >[BIB]</a>
-			</h2>
-		</div>
-	</div>
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-	
-
-<center>
-<font color='gray'>
-	<h3 style="font-family: 'Times New Roman'">
-        Copyright &copy Shiying Xiong
-    </h3>
-</font>
-</center>
-</div>
 
 </body>
+
+</html>
