@@ -1,133 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<style>
-		ul{width:100%;list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #FAEBD7	; font-family: 'Times New Roman'; font-size: 25px}
-		ul li{float:center}
-		li a:hover {background-color: #0000FF}
-		li a{display: block; color: #333; text-align: center; padding: 16px 16px; text-decoration: none}
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vortex Segments</title>
-	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
-	<script src="./layui/layui.js"></script>
-	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <title>VortexSegments</title>
 
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<meta name="google-site-verification" content="B7csoX1105RbCQIxLmRCFccraPu9TXIkNcRAddS2m5M" />
+    <meta name="description" content="Shiying Xiong - VortexSegments.">
+    <meta name="keywords" content="VortexSegments">
+    <meta name="author" content="VortexSegments">
+
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="../../assets/css/combined.css">
+
+    <!-- END: Styles -->
+
 
 
 </head>
 
 <body>
-<div class="container">
-    <ul class="nav nav-pills" style="text-align: center">
-    	<li><a href="#Title">Title</a></li> 
-		<li><a href="#Abstract">Abstract</a></li>  
-		<li><a href="#Video">Video</a></li>  
-		<li><a href="#Acknowledgement">Acknowledgement</a></li>  
-		<li><a href="#Citation">Citation</a></li>  
-    </ul>
+
+
+
+
+
+       
+
+
+
+
+    <div class="nk-main">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="bg-white">
+					<div class="col-md-12 column" style="margin-top: 0px; text-align: center" >
+                        <h4>Incompressible flow simulation on vortex segment clouds</h4>
+                        <h6>
+                        	<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Rui Tao, Yaorui Zhang, Fan Feng, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
+						</h6>
+						<h6>ACM Trans. Graph., Vol. 40, No. 4, Article 98. Publication date: August 2021.
+                <a href="https://cs.dartmouth.edu/~bozhu/papers/vortex_segment.pdf" >[PDF]</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 10px">
+                        <h5>Abstract</h5>
+                    </div> 
+                
+                    <div class="col-md-12 column">
+                        <h6>We propose a novel Lagrangian geometric representation using segment clouds to simulate incompressible fluid exhibiting strong anisotropic vortical features. The central component of our approach is a cloud of discrete segments enhanced by a set of local segment reseeding operations to facilitate both the geometrical evolution and the topological updates of vortical flow. We build a vortex dynamics solver with the support for dynamic solid boundaries based on discret segment primitives. We demonstrate the efficacy of our approach by simulating a broad range of challenging flow phenomena, such as reconnection of non-closed vortex tubes and vortex shedding behind a rotating object.</h6>
+                    </div>
+
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 10px">
+                        <h5>Video</h5>
+                    </div>                           
+
+                    
+                    <div class="col-md-12 column">
+                    	<style>
+                    		.videoWrapper {
+							  position: relative;
+							  padding-bottom: 56.25%;
+							  /* 16:9 */
+							  padding-top: 25px;
+							  height: 0;
+							}
+
+							.videoWrapper iframe {
+							  position: absolute;
+							  top: 0;
+							  left: 0;
+							  width: 100%;
+							  height: 100%;
+							}
+					    </style>
+                    	<div class="videoWrapper">
+  							<iframe src="https://www.youtube.com/embed/swAISiNZfoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+                    </div>                          
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 10px">
+                        <h5>Acknowledgement</h5>
+                    </div> 
+                    <div class="col-md-12 column">
+                        <h6>We thank Danielle Poole and all the anonymous reviewers for their constructive comments. We acknowledge the funding support from National Science Foundation (1919647). Rui Tao acknowledges the support from the China Scholarship Council visiting research student award. We credit the Houdini educational licenses for the video rendering.</h6>
+                    </div> 
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 10px">
+                        <h6>
+							Citation
+							<a href="VortexSegments.bib" >[BIB]</a>
+						</h6
+                    </div>                          
+                </div>           
+            </div>        
+        </div>
+
+      
+
+		<div class="nk-gap-4"></div>
+	</div>
+
+        <footer class="nk-footer">
+
+
+            <div class="nk-footer-cont">
+                <div class="container text-xs-center">
+
+                    <div class="nk-footer-text">
+                        <p>Copyright &copy Shiying Xiong</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+    <!-- START: Scripts -->
+
+    <script src="../../assets/js/combined.js"></script>
     
+    <!-- END: Scripts -->
 
-
-	<!--	Title-->
-	<div class="row clearfix" style="margin-top: 60px" id="Title">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800 ; text-align: center">
-				Incompressible flow simulation on vortex segment clouds
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				<a href="https://shiyingxiong.github.io/">Shiying Xiong</a>, Rui Tao, Yaorui Zhang, Fan Feng, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a>
-			</h3>
-			<h3 style="font-family: 'Times New Roman'; text-align: center">
-				ACM Trans. Graph., Vol. 40, No. 4, Article 98. Publication date: August 2021.
-				<a href="https://cs.dartmouth.edu/~bozhu/papers/vortex_segment.pdf" >[PDF]</a>
-			</h3>
-		</div>
-	</div>
-
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-	<div class="row clearfix" style="margin-top: 60px" id="Abstract">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Abstract
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				We propose a novel Lagrangian geometric representation using segment clouds to simulate incompressible fluid exhibiting strong anisotropic vortical features. The central component of our approach is a cloud of discrete segments enhanced by a set of local segment reseeding operations to facilitate both the geometrical evolution and the topological updates of vortical flow. We build a vortex dynamics solver with the support for dynamic solid boundaries based on discret segment primitives. We demonstrate the efficacy of our approach by simulating a broad range of challenging flow phenomena, such as reconnection of non-closed vortex tubes and vortex shedding behind a rotating object.
-			</h3>
-		</div>
-	</div>
-
-
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 40px;"/>
-		</div>
-	</div>
-
-
-    
-    <div class="row clearfix" style="margin-top: 60px;text-align: center" id="Video">
-		<div class="youtube">
-       		<iframe width="912" height="513" src="https://www.youtube.com/embed/swAISiNZfoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> 
-	</div>
-	
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 60px" id="Acknowledgement">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Acknowledgement
-			</h2>
-			<h3 style="font-family: 'Times New Roman'; text-align:justify; text-justify:inter-ideograph;">
-				We thank Danielle Poole and all the anonymous reviewers for their constructive comments. We acknowledge the funding support from National Science Foundation (1919647). Rui Tao acknowledges the support from the China Scholarship Council visiting research student award. We credit the Houdini educational licenses for the video rendering.
-			</h3>
-		</div>
-	</div>
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-
-    <div class="row clearfix" style="margin-top: 60px" id="Citation">
-		<div class="col-md-12 column">
-			<h2 style="font-family: 'Times New Roman' font-weight: 800">
-				Citation
-				<a href="VortexSegments.bib" >[BIB]</a>
-			</h2>
-		</div>
-	</div>
-	<div class="row clearfix" >
-		<div class="col-md-12 column" style="text-align: center">
-			<hr style="border: 1px solid lightgrey;margin-top: 30px;"/>
-		</div>
-	</div>
-	
-
-<center>
-<font color='gray'>
-	<h3 style="font-family: 'Times New Roman'">
-        Copyright &copy Shiying Xiong
-    </h3>
-</font>
-</center>
-</div>
 
 </body>
+
+</html>
